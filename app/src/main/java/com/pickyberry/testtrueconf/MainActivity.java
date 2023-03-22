@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private TextView tv;
-    Handler handler;
+    private Handler handler;
     private ObjectAnimator animatorFirst;
     private ObjectAnimator animatorUp;
     private ObjectAnimator animatorDown;
-    AnimatorListenerAdapter adapter_down;
-    AnimatorListenerAdapter adapter_up;
+    private AnimatorListenerAdapter adapter_down;
+    private AnimatorListenerAdapter adapter_up;
     private boolean animCancelled = true;
 
 
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Handle screen touch
     private final View.OnTouchListener handleTouch = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
